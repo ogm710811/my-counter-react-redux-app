@@ -1,10 +1,10 @@
-import * as actionTypes from "../../store/actions";
+import * as actionTypes from "../actions/index";
 
 const initialState = {
   storeResult: [],
 };
 
-const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     // IMPORTANT To REMEMBER!!
     // inside reducer function, it basically has no access to the global state

@@ -1,10 +1,10 @@
-import * as actionTypes from "../../store/actions";
+import * as actionTypes from "../actions/index";
 
 const initialState = {
   counter: 0,
 };
 
-const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.INC_COUNTER:
       const newState = Object.assign({}, state);
